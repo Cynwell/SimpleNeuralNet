@@ -9,12 +9,12 @@ def train_model():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     # Hyper-parameters
-    num_of_samples = 1000
+    num_of_samples = 50
     input_size = 1
     num_classes = 2
     num_epochs = 30
-    batch_size = 50
-    learning_rate = 0.001
+    batch_size = 10
+    learning_rate = 0.1
 
     # Initialize the model with pre-trained parameters.
     model = model_0.Model(input_size, num_classes)
